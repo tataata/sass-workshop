@@ -1,0 +1,12 @@
+/* Layout ------------------------------------ */
+/* ----------------------------------------------
+We have following DOM structure in index.html:
+
+
+
+---------------------------------------------- */
+nav {
+  overflow: auto; }
+  nav li {
+    float: left;
+    margin-right: 1em; }

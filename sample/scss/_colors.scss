@@ -1,0 +1,41 @@
+/* Text -------------------------------------- */
+
+/* ----------------------------------------------
+Please desccride in this file following DOM elements related with text properties.
+
+Structure of text elements: 
+p > a, a:hover, strong, code
+
+
+# 1. 
+	Using color operations you need to style all states of links (link, active, hover, active).
+	Documentation about color operations available in SASS: 
+	http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#color_operations
+
+
+---------------------------------------------- */
+
+
+$body-text: #222;
+$blue-base: #0581ED;
+
+body {
+	color:$body-text;
+
+	code {
+		color:lighten($body-text, 30%);
+	}
+}
+
+a {
+	color:$blue-base;
+
+	&:visited,
+	&:hover {
+		color:lighten($blue-base, 11%);
+	}
+
+	&active {
+		color:lighten($blue-base, 40%);
+	}
+}

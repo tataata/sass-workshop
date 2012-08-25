@@ -1,0 +1,79 @@
+/*
+Syntax error: Invalid property: "color:" (no value).
+        on line 18 of scss/text.scss
+
+13: ---------------------------------------------- */
+14: 
+15: 
+16: p {
+17: 	code {
+18: 		color:;
+19: 	}
+20: }
+
+Backtrace:
+scss/text.scss:18
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/prop_node.rb:103:in `check!'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:177:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:177:in `visit_prop'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:30:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:44:in `with_parent'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:191:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:30:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:44:in `with_parent'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:191:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:30:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:44:in `with_parent'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:56:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:24:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/base.rb:24:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/visitors/cssize.rb:6:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/tree/root_node.rb:22:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/engine.rb:300:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/engine.rb:247:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin/compiler.rb:202:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin/compiler.rb:234:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/exec.rb:431:in `watch_or_update'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/exec.rb:302:in `process_result'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.20/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \"color:\" (no value).\A         on line 18 of scss/text.scss\A \A 13: ---------------------------------------------- */\A 14: \A 15: \A 16: p {\A 17: 	code {\A 18: 		color:;\A 19: 	}\A 20: }"; }

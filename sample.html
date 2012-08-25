@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>I tried out SASS today!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" src="css/main.css">
+	</head>
+
+
+	<body>
+		<header>
+			<h1>SASS kiss my CSS!</h1>
+		</header><!-- /header -->
+		<nav>
+			<ul>
+				<li>Preprocessors for CSS. What for?</li>
+				
+				<li><a href="sources.htm">Installation of SASS</a></li>
+				<li><a href="practice.html">Introduction to SASS</a></li>
+				<li><a href="practice.html">References</a></li>
+			</ul>
+		</nav><!-- /nav -->
+		<section class="content">
+
+			<article>
+				<h1>Preprocessors for CSS. What for?</h1>
+				<p>CSS preprocessors good for using because they give to us a possibility to use variables and reuse them through whole file. Variables, guys! We all dreamed about it!</p>
+				<p>When we write CSS code we have to remember different values and relations between selectors, describe homogeneous elements with small differences  and in the end we have a long poem with a lot of repetitions.</p>
+				<p>CSS preprocessors take code written in the preprocessed language and then convert that code into the same CSS we’ve been writing for years. </p>
+				<p>Three of the most popular CSS preprocessors are SASS, LESS, and Stylus. In general all of them the same. More detail information about differences between them you can rich in Johnathan Croom’s article “Sass vs. LESS vs. Stylus: Preprocessor Shootout” (http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/).</p>
+				<p>Here we will do an overview of SASS.</p>
+			</article>
+
+			<article>
+				<h1>Introduction to SASS</h1>
+				<p>SASS is an acronym for a Syntactically Awesome Stylesheets. Official about SASS located on <a href="http://sass-lang.com/">http://sass-lang.com/</a>. Documentation available here: <a href="http://sass-lang.com/docs.html">http://sass-lang.com/docs.html</a></p>
+				<p>There are two syntaxis in SASS:</p>
+				<ol>
+					<li>
+						<p>SCSS, that is the new main syntax. It is very similar with CSS syntax with its curly braces. Every valid CSS3 stylesheet is valid SCSS as well. SCSS files use the extension .scss. </p>
+						<div>
+							<code>
+								$blue: #3bbfce;
+								$margin: 16px;
+
+								.content-navigation {
+								  border-color: $blue;
+								  color:
+								    darken($blue, 9%);
+								}
+
+								.border {
+								  padding: $margin / 2;
+								  margin: $margin / 2;
+								  border-color: $blue;
+								}
+							</code>
+						</div>
+					</li>
+					<li></li>
+				</ol>
+				<p>CSS preprocessors take code written in the preprocessed language and then convert that code into the same CSS we’ve been writing for years. </p>
+				<p>Three of the most popular CSS preprocessors are SASS, LESS, and Stylus. In general all of them the same. More detail information about differences between them you can rich in Johnathan Croom’s article “Sass vs. LESS vs. Stylus: Preprocessor Shootout” (http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/).</p>
+				<p>Here we will do an overview of SASS.</p>
+			</article>
+
+
+
+
+
+
+In this workshop we will use this syntax.
+
+SASS, the old one version of syntax, aka the indented syntax. Instead of brackets and semicolons, it uses the indentation of lines to specify blocks. As authors say, the indented syntax will continue to be supported. Files in the indented syntax use the extension .sass. More about it you can read here http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html
+$blue: #3bbfce
+$margin: 16px
+
+.content-navigation
+  border-color: $blue
+  color: darken($blue, 9%)
+
+.border
+  padding: $margin / 2
+  margin: $margin / 2
+  border-color: $blue
+
+
+Let’s see what else SASS allows to use.
+
+SASS: inheritance, nesting, variables, mixins
+
+
+For saving ourselves from a lot of duplicates in SAS we can use nesting and selector inheritance.
+Inheritance
+
+When we want to implement the same styles to multiple elements, in CSS we use the following construction:
+1
+2
+3
+4
+5	p,
+ul,
+ol {
+  /* styles here */
+}
+
+
+That works great, but if we need to further style the elements individually, another selector has to be created for each and it can quickly get messier and harder to maintain. To counter this, inheritance can be used. Inheritance is the ability for other CSS selectors to inherit the properties of another selector.
+
+For avoiding of duplicate properties in SASS we can to extend them via @extend.
+
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+.error.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}
+
+
+Nesting
+
+For describing properties of child elements with SASS we can to nest it in curly brackets of parent element.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15	section {
+  margin: 10px;
+ 
+  nav {
+    height: 25px;
+ 
+    a {
+      color: #0982C1;
+   
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+Variables
+Variables can be declared and used throughout the stylesheet. They can have any value that is a CSS value (e.g. colors, numbers, or text.), and can be referenced anywhere throughout stylesheet.
+Before the name of variable need to use the $ symbol and the value and name are separated with a semicolon, like a CSS property.
+1
+2
+3
+4
+5
+6
+7
+8
+9	$mainColor: #0982c1;
+$siteWidth: 1024px;
+$borderStyle: dotted;
+ 
+body {
+  color: $mainColor;
+  border: 1px $borderStyle $mainColor;
+  max-width: $siteWidth;
+}
+
+
+
+
+
+Mixins
+
+Mixins indent for more complicated staff than variables. Mixins allow you to re-use whole fragments of CSS, properties or selectors. You can even give them arguments. 
+They very useful for declare vendor prefixes, 
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17	/* Sass mixin error with (optional) argument $borderWidth which defaults to 2px if not specified */
+@mixin error($borderWidth: 2px) {
+  border: $borderWidth solid #F00;
+  color: #F00;
+}
+ 
+.generic-error {
+  padding: 20px;
+  margin: 4px;
+  @include error(); /* Applies styles from mixin error */
+}
+.login-error {
+  left: 12px;
+  position: absolute;
+  top: 20px;
+  @include error(5px); /* Applies styles from mixin error with argument $borderWidth equal to 5px*/
+}
+
+
+Importing
+
+In the CSS community, importing CSS is frowned upon because it requires multiple HTTP requests. Importing with a preprocessor works differently, however. If you import a file from any of the three preprocessors, it will literally include the import during the compile, creating only one file. Keep in mind though that importing regular .css files compiles with the default @import "file.css"; code. Also, mixins and variables can be imported and used in your main stylesheet. Importation makes creating separate files for organization very worthwhile.
+Installation of SASS
+
+
+For running SASS on your computer you need a Ruby first.
+
+Mac: for check if you have Ruby or not type in Terminal ruby -v
+On Mac OS X and older it is preinstalled. If not then http://net.tutsplus.com/tutorials/ruby/how-to-install-ruby-on-a-mac/
+
+
+Windows users can download  Ruby on http://rubyinstaller.org/downloads/ or http://rubyinstaller.org/
+This is a self-contained Windows-based installer 
+Linux users can install it via their package manager.
+
+Install Sass
+
+Ok, let’s install Sass! Open up your Terminal.app and type:
+WINDOWS:
+
+gem install compass
+
+LINUX / OS X:
+
+sudo gem install compass
+
+
+Sources
+
+http://sass-lang.com/
+http://sass-lang.com/docs.html
+Johnathan Croom’s article “Sass vs. LESS vs. Stylus: Preprocessor Shootout” (http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/
+http://thesassway.com/
+http://net.tutsplus.com/tutorials/ruby/how-to-install-ruby-on-a-mac/
+http://rubyinstaller.org/
+http://thesassway.com/beginner/getting-started-with-sass-and-compass
+
+
+
+
+
+
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>

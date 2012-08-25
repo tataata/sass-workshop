@@ -1,0 +1,47 @@
+/* Layout ------------------------------------ */
+
+/* ----------------------------------------------
+We have following DOM structure in index.html:
+
+
+
+---------------------------------------------- */
+
+body {
+	margin: 0 0 5em 4em;
+	width:50em;
+
+	a {
+		cursor:pointer;
+	}
+
+}
+
+.header-main {
+	a {
+		padding-top:1em;
+		display:block;
+	}
+}
+
+nav {
+  overflow: auto;
+  margin:1em 0;
+
+  li {
+    float:left;
+    margin-right:1em;
+  }
+}
+
+.content {
+	section {
+		margin-bottom:3em;
+	}
+
+	code {
+		p {
+			margin:0;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+/* Import files */
+/* 
+	For more detailed instruction check this part of documentation: 
+	http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#import 
+*/
+
+
+/* Reset stylesheet from HTML5 Boilerplate http://html5boilerplate.com/ */
+@import "_reset";
+
+/* Rules for layout elements */
+@import "_layout";
+
+/* Rules for layout elements */
+@import "_text";
+
+@import "_colors";
